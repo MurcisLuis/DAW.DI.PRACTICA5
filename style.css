@@ -1,0 +1,300 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Da+2&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+    font-family: 'Baloo Da 2', 'Roboto', sans-serif;
+}
+
+  
+  /* Custom styles */
+  .header-title {
+    margin-top: 2rem;
+    color: #333;
+  }
+  .header-subtitle {
+    color: #666;
+  }
+  .portfolio-item .card {
+    width: 90%;
+    height: auto;
+    margin-left: 5%;
+  }
+
+  .portfolio-item .card:hover {
+    width: 100%;
+    height: auto;
+    margin-left: 0%;
+  }
+
+  table img {
+    height: 100px;
+  }
+  .social-icons {
+    padding: 0;
+    list-style: none;
+    margin-top: 1rem;
+    display: inline;
+
+  }
+  .social-icons li {
+    display: inline-block;
+    margin-right: 10px;
+    width: 32px;
+    height: 32px;
+    background-image: url('img/32pixel-icons.png');
+    border-radius: 50%;
+  }
+  .facebook{
+      background-position: -178.0415px -7px;
+  }
+  .email{
+      background-position: -7px -6.5px;
+  }
+  .google{
+      background-position: -121px -6.5px;
+  }
+  .twiter{
+      background-position: -292.5px -6.5px;
+  }
+  .linkedin{
+      background-position: -350.5px -6.5px;
+  }
+  .github{
+      background-position: -408px -6.5px;
+  }
+  .facebook:hover{
+    background-position: -178.0415px -81px;
+   }
+   .email:hover{
+       background-position: -7px -81px;
+   }
+   .google:hover{
+       background-position: -121px -80px;
+   }
+   .twiter:hover{
+       background-position: -292.5px -81px;
+   }
+   .linkedin:hover{
+       background-position: -350.5px -81px;
+   }
+   .github:hover{
+       background-position: -408px -81px;
+   }
+
+  .portfolio-item {
+    margin-bottom: 1rem;
+  }
+  .footer-links {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+  }
+  .footer-links li {
+    display: inline;
+    margin-right: 10px;
+  }
+
+
+  .code-container h2 {
+    font-size: 1.5em;
+    color: #333;
+    padding-left: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .code-container {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-left: 3px solid green;
+    padding: 10px;
+    overflow-x: auto;
+    font-family: 'Courier New', Courier, monospace;
+    margin-left: 30px;
+    margin-bottom: 30px;
+  }
+  
+  /* Estilos para el bloque de código pre y code */
+  pre {
+    margin: 0;
+  }
+  
+  code {
+    white-space: pre;
+  }
+
+.book-list li {
+  list-style-type: none; 
+  position: relative; 
+  padding-left: 35px; 
+}
+
+.book-list li::before {
+  content: ''; 
+  position: absolute;
+  left: 0; 
+  top: 50%; 
+  transform: translateY(-50%); 
+  width: 20px; 
+  height: 20px; 
+  background-image: url('./img/libro.png'); 
+  background-size: cover; 
+} 
+
+
+blockquote p {
+  margin: 0;
+}
+
+blockquote {
+  display: flex;
+  justify-content: space-between; /* Alinea los elementos a los extremos */
+  align-items: center; /* Centra los elementos verticalmente */
+  padding: 20px;
+  margin-bottom: 1rem;
+  margin-left: 20%;
+  background-color: #f9f9f9; /* Gris claro */
+  border-right: 5px solid #ffc107; /* Borde amarillo */
+}
+
+blockquote span {
+  flex-grow: 1; /* Permite que el span ocupe todo el espacio disponible */
+  text-align: center;
+  font-style: italic;
+}
+
+blockquote:before,
+blockquote:after {
+  font-family: Georgia;
+  font-size: 4em;
+  line-height: 0.1em;
+  color: #ffc107; 
+}
+
+blockquote:before {
+  content: "\201C"; /* Comilla de apertura */
+  margin-right: 0.25em;
+}
+
+blockquote:after {
+  content: "\201D"; /* Comilla de cierre */
+  margin-left: 0.25em;
+}
+
+
+/* Estilos personalizados para enlaces */
+section a,footer a {
+  color: #ffd700 !important; /* Este es un color amarillo común; ajusta al tono exacto de tu diseño */
+  text-decoration: underline !important;
+  font-style: italic; /* Aplica el estilo itálico a los enlaces */
+  transition: color 0.3s ease-in-out; /* Efecto de transición suave para los cambios de color */
+}
+
+/* Estilo para el estado hover de los enlaces */
+section a:hover {
+  color: #ffd699;
+  /* No es necesario cambiar el color a menos que desees un efecto específico al pasar el mouse */
+}
+h2 {
+  margin-bottom: 15px;
+}
+h3 {
+  color: #4a4a4a; /* Un gris oscuro, cambia esto por el color específico */
+  font-size: 24px; /* Ajusta el tamaño de la fuente según sea necesario */
+  margin-bottom: 15px; /* Espacio debajo del título para separarlo del contenido siguiente */
+  letter-spacing: 1px; /* Espaciado entre letras si es necesario */
+}
+
+.header-full {
+  background-image: url('img/cabecera1.jpg');
+  background-size: auto;
+  background-repeat: inherit;
+  height: 800px;
+}
+
+.header-content {
+  background-image: url('img/cabecera1.jpg');
+  background-size: cover;
+}
+
+.nav-link {
+  border-radius: 0.25rem; /* Radio del borde para emular el estilo de badge */
+  padding: 0.5em 0.75em; /* Ajuste el relleno según sea necesario */
+
+}
+
+/* Estilo personalizado para el hover de los enlaces en la barra de navegación */
+.navbar-nav .nav-link:hover {
+  background-color: #ffc107; /* Color de fondo para bg-warning */
+  color: black; /* Color de texto, ajusta según sea necesario */
+}
+
+/* Asegúrese de que el texto del enlace no cambie de tamaño drásticamente */
+.navbar-nav .nav-link {
+  transition: all 0.3s ease; /* Transición suave para el efecto hover */
+}
+
+.table-warning th,.table-warning td{
+  background-color: #ffc107 !important;
+}
+
+.btn-warning:hover {
+  background-color: white !important;
+  color: #ffc107 !important;
+}
+
+
+input::placeholder,input,textarea::placeholder,textarea,select {
+  color: #ffc107 !important;
+}
+
+
+.custom-checkbox {
+  position: relative;
+  display: inline-block;
+  padding-left: 35px; /* Space for the checkmark */
+  cursor: pointer;
+  user-select: none;
+}
+
+
+input,.checkmark,textarea,select {
+  border: #333 1px solid !important;
+
+}
+
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+  border-radius: 5px; /* Optional for rounded corners */
+}
+
+.custom-checkbox:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.custom-checkbox input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.custom-checkbox .checkmark:after {
+  left: 4px;
+  top: -10px;
+  width: 16px;
+  height: 30px;
+  border: solid black;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
